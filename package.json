@@ -1,32 +1,36 @@
 {
-	"name": "testingserver",
-	"version": "1.0.0",
-	"description": "Server Testing Project",
-	"main": "server.js",
-	"scripts": {
-		"test": "jest --watch --verbose  --runInBand"
-	},
-	"jest": {
-		"testEnvironment": "node"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/LambdaSchool/Server-Testing.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/LambdaSchool/Server-Testing/issues"
-	},
-	"homepage": "https://github.com/LambdaSchool/Server-Testing#readme",
-	"devDependencies": {
-		"jest": "^23.6.0",
-		"supertest": "^3.3.0"
-	},
-	"dependencies": {
-		"express": "^4.16.4",
-		"knex": "^0.15.2",
-		"sqlite3": "^4.0.4"
-	}
+  "name": "testingserver",
+  "version": "1.0.0",
+  "description": "Server Testing Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --watch --verbose  --runInBand",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaSchool/Server-Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LambdaSchool/Server-Testing/issues"
+  },
+  "homepage": "https://github.com/LambdaSchool/Server-Testing#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "knex": "^0.15.2",
+    "sqlite3": "^4.0.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
